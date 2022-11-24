@@ -1,16 +1,28 @@
 {% extends 'base.html'%} 
 
 {%block head%}
-<h1> Yurrr </h1>
+<h1> To do List </h1>
 {%endblock%}
 
 
 {%block body%}
-<div class="nav">
-    <ul>
-        <li> Wagwan</li>
-        <li> Wagwan</li>
-        <li> Wagwan</li>
-    </ul>
+<div class="tasks">
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Description</th>
+            <th>Date</th>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <a href="">Delete</a>
+                <br>
+                <a href="">Update</a>
+            </td>
+        </tr>
+    </table>
 </div>
 {%endblock%}
