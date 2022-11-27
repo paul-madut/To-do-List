@@ -18,7 +18,7 @@ class Todo(db.Model):
 def index():
     if request.method == 'POST':
         task_content = request.form['content']
-        bew_task = Todo(task_content)
+        new_task = Todo(content = task_content)
 
         try:
             db.session.add(new_task)
